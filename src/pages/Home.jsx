@@ -15,7 +15,7 @@ function Home() {
   <SearchExercises setExercises={setExercises} bodyPart={bodyPart}
   setBodyPart={setBodyPart}/>
   <Exercises setExercises={setExercises} bodyPart={bodyPart}
-  setBodyPart={setBodyPart}/> 
+  exercises={exercises}/> 
     </Box>
   )
 }
