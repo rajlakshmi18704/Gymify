@@ -16,7 +16,9 @@ return (
       title={item.id || item}
       m="0 20px" // Adjust spacing between items
     >
-      <BodyPart item={item} setBodyPart={setBodyPart} bodyPart={bodyPart} />
+      <BodyPart item={item} setBodyPart={setBodyPart} bodyPart={bodyPart} onClick={
+        ()=>setBodyPart(item)
+      } />
     </Box>
   ))}
 
