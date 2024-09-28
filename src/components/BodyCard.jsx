@@ -1,11 +1,11 @@
 import React, { useContext } from 'react';
-
+import ExerciseCard from './ExerciseCard';
 import { Box,Stack } from '@mui/material';
-import BodyPart from './BodyPartCard';
+import BodyPartCard from './BodyPartCard';
 
   
 
-const BodyCard = ({ data, bodyParts, setBodyPart, bodyPart }) => {
+const BodyCard = ({ data,  setBodyPart, bodyPart,isBodyParts }) => {
 return (
   <Box className='BodyCard ' >
   
@@ -16,9 +16,12 @@ return (
       title={item.id || item}
       m="0 20px" // Adjust spacing between items
     >
-      <BodyPart item={item} setBodyPart={setBodyPart} bodyPart={bodyPart} onClick={
-        ()=>setBodyPart(item)
-      } />
+   
+   {isBodyParts?<BodyPartCard item={item} setBodyPart={setBodyPart} bodyPart={bodyPart} />:<ExerciseCard
+   exercise={item}
+   />}
+
+
     </Box>
   ))}
 

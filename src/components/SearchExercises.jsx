@@ -57,7 +57,7 @@ setExercises(searchedExercises)
    
     </Box>
     <Box sx={{ position: 'relative', width: '100%', p: '20px' }}>
-        <BodyCard data={bodyParts} bodyPart={bodyPart} setBodyPart={setBodyPart} />
+        <BodyCard data={bodyParts} bodyPart={bodyPart} setBodyPart={setBodyPart} isBodyParts />
       </Box>
   </Stack>
   )

@@ -5,7 +5,13 @@ export const exerciseOptions = {
     'X-RapidAPI-Key': import.meta.env.VITE_API_KEY,
   }
 };
-
+export const youtubeOptions = {
+  method: 'GET',
+  headers: {
+    'X-RapidAPI-Host': 'youtube-search-and-download.p.rapidapi.com',
+    'X-RapidAPI-Key': import.meta.env.VITE_API_KEY,
+  },
+};
 
 export const fetchData = async (url, options) => {
   const res = await fetch(url, options);
